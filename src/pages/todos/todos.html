@@ -1,0 +1,34 @@
+<!--
+  Generated template for the TodosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>todos</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+
+<ion-card *ngFor="let item of todosArray">
+  <ion-item >
+    <!-- <ion-avatar item-left>
+    </ion-avatar> -->
+    <h2>id : {{item.id}}</h2>
+    <h2>tasks : {{item.tasks}}</h2>
+    <h2>status : {{item.status}}</h2>
+    <h2>created : {{item.created_at}}</h2>
+    <p></p>
+  </ion-item>
+
+<ion-card-content>
+  <p></p>
+</ion-card-content>
+</ion-card>
+
+</ion-content>

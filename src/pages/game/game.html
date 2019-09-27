@@ -15,5 +15,28 @@
 
 
 <ion-content padding>
+  <!-- one way  แสดงผลอย่างเดียว //เอาข้อมูลจาก SQLมาใส่ จากนั้นทำloop -->
+  <ion-card *ngFor="let item of gameArray">
+    <!-- *ngFor="let item of list <<-- วนลูป  เลือก ng for   -->
+    <!-- gameArray ชื่อ หน้า.ts -->
+    <!-- let item of gameArray -->
+    <ion-item>
+      <ion-avatar item-left>
+        <!-- แสดงผลรูปภาพ {{item.game_img}} โดยการทำ One way-->
+        <img src="http://localhost/shop/img/{{item.game_img}}"> 
+        <!-- แสดงผลรูปภาพ {{item.game_img}} โดยการทำ One way-->
+      </ion-avatar>
+      <!-- ทำ one way  {{item. ......สิ่งที่ต้องการแสดง......}} -->
+      <h2>Name : {{item.game_name}}</h2>
+      <h2>Name : {{item.game_price}}</h2>
+      <!-- ทำ one way  -->
+      <p></p>
+    </ion-item>
+    <img src="http://localhost/shop/img/{{item.game_img}}">
+    <ion-card-content>
+      <p>{{item.game_detail}}</p>
+    </ion-card-content>
+  </ion-card>
+  <!-- one way  แสดงผลอย่างเดียว -->
 
 </ion-content>

@@ -10,13 +10,16 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GamePage } from '../pages/game/game';
+import { TodosPage } from '../pages/todos/todos';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,             
-    GamePage //เพิ่มเพจ
+    GamePage,
+    TodosPage //เพิ่มเพจ
+
   ],
   imports: [
     BrowserModule, HttpClientModule, //ติดต่อเเว็บ้างนอก
@@ -27,7 +30,8 @@ import { GamePage } from '../pages/game/game';
     MyApp,
     HomePage,
     ListPage,        
-    GamePage //เพิ่มเพจ
+    GamePage,
+    TodosPage //เพิ่มเพจ
   ],
   providers: [
     StatusBar,
